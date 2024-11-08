@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!--Icones-->
     <script src="https://kit.fontawesome.com/a14fb836f8.js" crossorigin="anonymous"></script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS do projeto-->
+    <link rel="stylesheet" href="style.css">
+    
     <title>Supermarket</title>
 </head>
 <body>
     <!-- Cabeçalho com logo -->
     <header>
-        <img src="" alt="" srcset="">
-        <span>Supermarket List</span>
+        <i class="fa-solid fa-basket-shopping"></i>
+        <span>Supermarket</span>
     </header>
 
     <!-- Lista central -->
@@ -23,25 +27,33 @@
             <h1>Compras da semana</h1>
         </div>
 
-        <form>
-            <input type="text">
-            <button>Adicionar item</button>
-        </form>
+        <div  class="container">
+            <form>
+                <input type="text">
+                <button>Adicionar item</button>
+            </form>
 
-        <ul>
-            <li>
-                <input type="checkbox">
-                Exemplo de item
-                <i class="fa-regular fa-trash-can"></i>
-            </li>
-        </ul>
+            <ul class="lista">
+                <li>
+                    <div>
+                        <input type="checkbox">
+                        <span>Exemplo de item</span>
+                    </div>
+                    <i class="fa-regular fa-trash-can"></i>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Aviso modal -->
+        <div id="modal">
+            <div>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <span>O item foi removido da lista</span>
+            </div>
+                <i class="fa-solid fa-xmark"></i>
+        </div>
      </main>
 
-     <!-- Aviso modal -->
-     <div id="modal">
-        <i class="fa-solid fa-circle-exclamation"></i>
-        <span>O item foi removido da lista</span>
-        <i class="fa-solid fa-xmark"></i>
-     </div>
+
 </body>
 </html>
