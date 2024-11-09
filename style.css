@@ -39,6 +39,7 @@ body {
 header {
     gap: 0.3rem;
     margin-bottom: 55px;
+    font-size: 35px;
     
 }
 
@@ -99,6 +100,7 @@ main div h1{
     width: 90%;
     background-color: var(--background-secundary);
     padding: 20px 15px;
+    margin-bottom: 10px;
     border-radius: 10px;
 
 }
@@ -117,4 +119,6 @@ main div h1{
     background-color: var(--color-danger);
     border-radius: 10px;
     border: none;
+    visibility: hidden;
+    
 }
