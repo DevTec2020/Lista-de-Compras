@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <!-- Font Inter-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <!--Icones-->
     <script src="https://kit.fontawesome.com/a14fb836f8.js" crossorigin="anonymous"></script>
 
@@ -22,24 +26,26 @@
     <!-- Lista central -->
      <main>
         <div>
-            <i class="fa-solid fa-arrow-left"></i>
-            <span>Voltar</span>
+            <div class="linkReturn">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Voltar</span>
+            </div>
             <h1>Compras da semana</h1>
         </div>
 
         <div  class="container">
             <form>
-                <input type="text">
+                <input type="text" placeholder="Adicione um novo item">
                 <button>Adicionar item</button>
             </form>
 
             <ul class="lista">
                 <li>
-                    <div>
-                        <input type="checkbox">
+                    <div class="divItem">
+                        <input type="checkbox" class="checkbox">
                         <span>Exemplo de item</span>
                     </div>
-                    <i class="fa-regular fa-trash-can"></i>
+                    <img src="./assets/lixeira.svg" alt="" srcset="">
                 </li>
             </ul>
         </div>
@@ -47,10 +53,10 @@
         <!-- Aviso modal -->
         <div id="modal">
             <div>
-                <i class="fa-solid fa-circle-exclamation"></i>
+                <img src="./assets/warning-circle-filled.svg">
                 <span>O item foi removido da lista</span>
             </div>
-                <i class="fa-solid fa-xmark"></i>
+                <img src="./assets/delete-small.svg" alt="" srcset="">
         </div>
      </main>
 
