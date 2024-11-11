@@ -37,9 +37,13 @@ body {
 }
 
 header {
-    gap: 0.3rem;
-    margin-bottom: 55px;
-    font-size: 35px;
+    font-size: var(--text-title);
+    line-height: 32px;
+    font-weight: bold;
+
+    & span {
+        margin-left: 5px;
+    }
     
 }
 
@@ -51,6 +55,8 @@ main {
 
 .linkReturn {
     font-size: var(--text-link);
+    line-height: 20px;
+    font-weight: medium;
     color: var(--color-brand);
     cursor: pointer;
     
@@ -58,6 +64,8 @@ main {
 
 main div h1{
     font-size: var(--text-title);
+    line-height: 32px;
+    font-weight: bold;
     margin: 15px 0px 45px;
 }
 
@@ -67,6 +75,7 @@ main div h1{
 
     & form input {
         font-size: var(--text-label);
+        font-weight: medium;
         color: var(--content-tertiary);
         height: 40px;
         width: 70%;
@@ -110,15 +119,28 @@ main div h1{
 }
 
 /*Mgs do modal*/
-#modal {
+#alert {
+    font-size: var(--text-paragraph);
+    color: var(--always-white);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 90%;
-    padding: 10px 15px;
-    color: var(--always-white);
     background-color: var(--color-danger);
+    padding: 10px 15px;
     border-radius: 10px;
     border: none;
     visibility: hidden;
-    
+}
+
+#alert > div {
+    display: flex;
+    align-items: center;
+        
+}
+
+#alert > div span {
+    line-height: 20px;
+    font-weight: 500;
+    padding-left: 10px;
 }
