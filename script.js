@@ -1,7 +1,14 @@
+// Recuperando dados do form
 const addItem = document.querySelector("form")
 const input = document.querySelector("form input")
+
+// Recuperando dados da lista
 const ItemLista = document.querySelector(".lista")
+
+// Recuperando Alert
 const alert = document.getElementById("alert")
+const icoFechar = document.getElementById("ico-fechar")
+
 
 
 // Adicionando item pelo Form
@@ -48,6 +55,7 @@ addItem.onsubmit = (event) => {
     
 }
 
+// Removendo itemm
 function RemoveItem(liItem){
     try {
         const li = liItem.parentElement;
@@ -61,16 +69,17 @@ function RemoveItem(liItem){
     }
 }
 
+// Limpa Form
 function clearForm(){
     input.value = ""
 }
 
+// Deixando o alerta visivel
 function ativaAlerta(){
-    const teste = document.getElementById("alert")
-    teste.style.visibility='visible'
-
-    setTimeout(() => {
-        teste.style.visibility='hidden'
-    },4000)
-
+    alert.style.visibility='visible'
 }
+
+// Fechando o alerta no icone X
+icoFechar.addEventListener("click", () => {
+    alert.style.visibility='hidden'
+}) 
