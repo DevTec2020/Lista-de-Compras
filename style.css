@@ -114,6 +114,10 @@ main div h1{
 
 }
 
+.lista li img {
+    cursor: pointer;
+}
+
 .divItem span{
     padding-left: 10px;
 }
